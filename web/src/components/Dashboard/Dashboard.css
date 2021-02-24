@@ -1,0 +1,22 @@
+.foodContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.foodCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 200px;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 20px;
+  
+}
+img{
+  border-radius: 30%;
+}
+button{
+  background-color: rgba(223, 19, 0, 0.678);
+}
