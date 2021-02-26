@@ -13,7 +13,7 @@ const FoodItems = ({ name, amount, image, quantity }) => {
   const AddToCart = () => {
     const items = { name: name, amount: amount, quantity: quantity };
     setAddedToCart(true);
-    setCartText("Added to your cart");
+    setCartText("Added to cart");
     setGlobalState((prevState) => ({
       ...prevState,
       cart: [...globalState.cart, items],

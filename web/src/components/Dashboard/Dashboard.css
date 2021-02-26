@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   border: none;
-  width: 200px;
+  width: 60%;
   border-radius: 10px;
   margin: 10px auto;
   padding: 20px;
@@ -16,6 +16,8 @@
 }
 img{
   border-radius: 30%;
+  width: 90%;
+  height: 95%;
 }
 button{
   background-color: rgba(223, 19, 0, 0.678);

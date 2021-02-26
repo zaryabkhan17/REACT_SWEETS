@@ -30,33 +30,24 @@ const Cart = () => {
   };
 
   const removeItem = (e) => {
-    // e.quantity - 1;
-    // if (quantity <= 2) {
-    //   setEnough(true);
-    // }
-    console.log(e);
+    setItemQuantity(--e.quantity);
+    console.log(--e.quantity);
   };
   const addItem = (e) => {
     setItemQuantity(++e.quantity);
-    // if (quantity >= 2) {
-    //   setEnough(false);
-    // }
-    // e.amount++;
+    
 
     console.log(++e.quantity);
   };
-  // let calcAmount = (e) => {
-  //   console.log(e);
-  // };
 
   return (
     <div>
       <Table striped bordered hover size="sm">
         <thead>
           <tr>
-            <th>Item Name</th>
-            <th>Quantity</th>
-            <th>Amount</th>
+            <th>Sweet</th>
+            <th>Quantity (kg)</th>
+            <th>Amount (PKR)</th>
           </tr>
         </thead>
         {globalState.cart.map((v, i) => {
@@ -83,11 +74,9 @@ const Cart = () => {
           );
         })}
       </Table>
-      <button onClick={placeOrder}>place order</button>
+      <button onClick={placeOrder}>Order</button>
     </div>
   );
-
-  // return <h1>hello</h1>;
 };
 
 export default Cart;

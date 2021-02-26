@@ -30,8 +30,6 @@ export const AppRouter = () => {
     });
   };
 
-  // console.log(globalState, setGlobalState);
-
   return (
     <div>
       {globalState.isLoggedIn ? (
@@ -50,7 +48,7 @@ export const AppRouter = () => {
               <li>
                 <button
                   onClick={handleLogout}
-                  style={{ border: "none", background: "#fff" }}
+                  style={{ border: "none", background: "#eee" }}
                 >
                   Logout
                 </button>
